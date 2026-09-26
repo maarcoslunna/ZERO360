@@ -1,0 +1,20 @@
+:root{--w:#FFFFFF;--k:#1C1C1C;--r:#96090B;--line:rgba(28,28,28,.14);--pad:clamp(20px,5vw,72px);--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;background:var(--w);color:var(--k);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}ul{list-style:none}
+:focus-visible{outline:2px solid var(--r);outline-offset:3px}
+h1,h2,h3{font-weight:700;letter-spacing:-.03em;line-height:.98}
+.btn{display:inline-flex;gap:10px;align-items:center;padding:16px 28px;font-weight:600;font-size:13px;letter-spacing:.06em;border:1px solid var(--k);transition:.35s var(--ease)}
+.btn span{transition:transform .35s var(--ease)}.btn:hover span{transform:translateX(5px)}
+.btn--red{background:var(--r);border-color:var(--r);color:#fff}.btn--red:hover{background:var(--k);border-color:var(--k)}
+.btn--ghost:hover{background:var(--k);color:#fff}
+[data-r]{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+[data-r].in{opacity:1;transform:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+.logo{display:inline-flex;align-items:flex-end;line-height:1}
+.logo__word{font-family:'Caprasimo','Poppins',serif;letter-spacing:-.02em}
+.logo__dot{width:.2em;height:.2em;border-radius:50%;background:var(--r);margin:0 .06em .1em .06em}
+.logo sup{font:600 .38em 'Poppins';align-self:flex-start;margin-top:.1em}
+.logo--light{color:#fff}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}[data-r]{opacity:1;transform:none}}

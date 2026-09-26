@@ -1,0 +1,7 @@
+.projects{position:relative;padding:110px var(--pad);border-top:1px solid var(--line)}
+.projects__head{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:end}
+.projects__head h2{font-size:clamp(40px,6.4vw,100px)}
+.projects__head p{line-height:1.7;opacity:.75;max-width:420px}
+.projects__all{display:inline-flex;align-items:center;gap:10px;margin-top:40px;font-size:12px;font-weight:600;letter-spacing:.1em}
+.projects__all span{transition:transform .3s}.projects__all:hover span{transform:translateX(5px)}
+@media(max-width:900px){.projects__head{grid-template-columns:1fr;gap:20px}}
